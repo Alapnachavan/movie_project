@@ -1,5 +1,6 @@
 body{
-	background-color:yellow;
+	background-color: #0E0E15;
+;
 
 }
 
@@ -12,32 +13,30 @@ body{
 	height:80px;
 }
 .row3{
-	border:1px solid red;
+	
 	height:28px;
 }
 .row4{
-	border:1px solid red;
+	
 	height:40px;
 }
 .row5{
-	border:1px solid red;
+	
 	height:38px;
 }
 .row6{
-	border:1px solid red;
+	
 	height:28px;
 }
 
 .col1{
     float:left;
-    border:solid 2px red;
     height:80px;
     width:72px;
     margin-left:35px;
 }
 .col2{
     float:left;
-    border:solid 2px red;
     height:55px;
     width:125px;
     margin-left:20px;
@@ -46,7 +45,6 @@ body{
 }
 .col3{
     float:right;
-    border:solid 2px red;
     height:35px;
     width:105px;
     margin-right:35px;
@@ -57,7 +55,6 @@ body{
 }
 .col4{
     float:right;
-    border:solid 2px red;
     height:35px;
     width:60px;
     margin-right:35px;
@@ -67,7 +64,6 @@ body{
 }
 .col51{
 	float:left;
-    border:solid 2px red;
     height:35px;
     width:56px;
     margin-left:120px;
@@ -96,10 +92,8 @@ body{
 	float:left;
 	margin-top:-336px;
 	margin-left:260px;
+
 }
-
-
-
 
 .movierow{
 	border:solid red 1px;
@@ -112,6 +106,7 @@ body{
 	width:263px;
 	height:90%;
 	float:left;
+	text-color:white;
 	 
 }
 .action{
@@ -153,10 +148,11 @@ body{
 	height:56px;
 	width:56px;
 	float:right;
-	margin-top:-97px;
+	margin-top:-59px;
 }
 .like_img{
 	margin-top:5px;
+	margin-left:5px;
 }
 
 
@@ -167,17 +163,38 @@ body{
   border-radius: 50%;
   display: inline-block;
   margin-top:5px;
+  margin-left:7px;
+  margin-bottom:5px;
 }
 
+.img1{
+	border:solid red 1px;
+	height:56px;
+	width:56px;
+	float:right;
+	margin-top:-97px;
+}
 
+.text{
+	color:white;
+}
 
+.add_movie{
+	border:solid red 1px;
+	height:500px;
+	width:auto;
 
+}
+.footer{
+	border:solid red 1px;
+	height:170px;
+	width:auto;
+	background-color: #272734;
 
-
-
-
-
-
+}
+.footer_img{
+	padding:75px 0px 0px 450px;
+}
 
 
 

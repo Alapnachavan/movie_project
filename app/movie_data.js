@@ -1,7 +1,13 @@
+"use client"
+import React, { useState } from 'react';
+
 import Actionrow from "./action-row.js";
+import { likes } from "./like_dislike.js";
+
 
 const Movie_data=()=>{
-	const movies=[{
+	const [movies,setMovies]=useState([
+			{		
 				id:1,
 				image:"image 1.svg",
 	  			title:"Dear Zindgi",
@@ -98,12 +104,20 @@ const Movie_data=()=>{
 	  			gener:"Drama,Biography,Drama",
 	  			para:"After he becomes a quadriplegic from a paragliding accident, an aristocrat hires a young man from the projects to be his caregiver."
 	  			},
-	   ];
+	   ]);
+	   
+	   const handleDelete = (id) => {
+		  const updatedMovies = movies.filter((movie) => movie.id !== id);
+		  setMovies(updatedMovies);
+		};   
+		
+		
+		
 	   
   return (
     <div>
       {movies.map((movie) => (
-        <Actionrow key={movie.id} movie={movie} />
+        <Actionrow key={movie.id} movie={movie} onDelete={handleDelete} />
       ))}
     </div>
     
@@ -111,20 +125,6 @@ const Movie_data=()=>{
 };
 
 export default Movie_data;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

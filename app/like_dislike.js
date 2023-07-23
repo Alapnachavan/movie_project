@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 
+
 const LikeDislikeButton = () => {
   const [data, setData] = useState([
 	{ id: 1, likes: 0 },
@@ -21,8 +22,8 @@ const LikeDislikeButton = () => {
 	  )
 	);
   };
-
- return (
+  
+return (
 	<div>
 	  {data.map((item) => (
 	    <div key={item.id}>
@@ -31,7 +32,6 @@ const LikeDislikeButton = () => {
 	        <img className="like_img" src="Icon - Like.svg" onClick={() => handleDislikeClick(item.id)} alt="Dislike" height="45" width="45" />
 	      <span>{item.dislikes}</span>
 	      <p>{item.text}</p>
-	      <button onClick={() => handleDeleteClick(item.id)}>Delete</button>
 	    </div>
 	  ))}
 	</div>
